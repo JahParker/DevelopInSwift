@@ -9,6 +9,7 @@ import SwiftUI
 
 let gradientColors: [Color] = [
     .gradientTop,
+    .gradientMiddle,
     .gradientBottom
 ]
 
@@ -19,7 +20,7 @@ struct ContentView: View {
             FeaturesPage()
         }
         .background(Gradient(colors: gradientColors))
-        .foregroundStyle(.white)
+        .foregroundStyle(.black)
         .tabViewStyle(.page)
     }
 }
