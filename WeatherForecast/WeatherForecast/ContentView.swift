@@ -8,12 +8,12 @@
 import SwiftUI
 
 var dayForecasts: [DayForecast] = [
-    DayForecast(day: "Mon", isRainy: false, high: 70, low: 50),
-    DayForecast(day: "Tue", isRainy: true, high: 60, low: 40),
-    DayForecast(day: "Wed", isRainy: true, high: 63, low: 47),
-    DayForecast(day: "Thur", isRainy: false, high: 68, low: 50),
-    DayForecast(day: "Fri", isRainy: false, high: 68, low: 49),
-    DayForecast(day: "Sat", isRainy: false, high: 65, low: 52),
+    DayForecast(day: "Mon", isRainy: false, high: 83, low: 50),
+    DayForecast(day: "Tue", isRainy: true, high: 75, low: 40),
+    DayForecast(day: "Wed", isRainy: true, high: 68, low: 47),
+    DayForecast(day: "Thur", isRainy: false, high: 70, low: 50),
+    DayForecast(day: "Fri", isRainy: false, high: 76, low: 49),
+    DayForecast(day: "Sat", isRainy: false, high: 76, low: 52),
     DayForecast(day: "Sun", isRainy: true, high: 67, low: 49)
 ]
 
@@ -81,6 +81,13 @@ struct DayForecast: Identifiable {
 // Handles DayForecast appearance
 struct DayForecastView: View {
     let DayForecast: DayForecast
+    var heatIndexColor: Color {
+        if DayForecast.high >= 80 {
+            return Color.red
+        } else {
+            return DayForecast.iconInfo.color
+        }
+    }
     
     var body: some View {
         VStack {
@@ -88,7 +95,7 @@ struct DayForecastView: View {
                 .font(Font.headline)
             
             Image(systemName: DayForecast.iconInfo.name)
-                .foregroundStyle(DayForecast.iconInfo.color)
+                .foregroundStyle(heatIndexColor)
                 .font(Font.largeTitle)
                 .padding()
             
