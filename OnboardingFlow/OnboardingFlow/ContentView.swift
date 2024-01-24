@@ -18,10 +18,12 @@ struct ContentView: View {
         TabView {
             WelcomePage()
             FeaturesPage()
+            SubscriptionPage()
         }
         .background(Gradient(colors: gradientColors))
         .foregroundStyle(.black)
         .tabViewStyle(.page)
+        .ignoresSafeArea()
     }
 }
 
