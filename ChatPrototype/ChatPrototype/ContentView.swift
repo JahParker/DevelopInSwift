@@ -15,37 +15,51 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack(spacing: 15) {
-            Text("My name is Jah're Parker")
-                .padding()
-                .background(Color.teal, in: RoundedRectangle(cornerRadius: 8))
-                .shadow(radius: 2)
-                .foregroundStyle(.white)
+            HStack {
+                Spacer()
+                Text("My name is Jah're Parker")
+                    .padding()
+                    .background(Color.teal, in: RoundedRectangle(cornerRadius: 8))
+                    .shadow(radius: 2)
+                    .foregroundStyle(.white)
+            }
 
-
-            Text("Hi, Jah're! Nice to meet you")
-                .padding()
-                .background(Color.gray, in: RoundedRectangle(cornerRadius: 8))
-                .shadow(radius: 2)
+            HStack {
+                Text("Hi, Jah're! Nice to meet you")
+                    .padding()
+                    .background(Color.gray, in: RoundedRectangle(cornerRadius: 8))
+                    .shadow(radius: 2)
                 .foregroundStyle(.white)
+                Spacer()
+            }
 
-            Text("Are you having a good day?")
-                .padding()
-                .background(Color.gray, in: RoundedRectangle(cornerRadius: 8))
-                .shadow(radius: 2)
+            HStack {
+                Text("Are you having a good day?")
+                    .padding()
+                    .background(Color.gray, in: RoundedRectangle(cornerRadius: 8))
+                    .shadow(radius: 2)
                 .foregroundStyle(.white)
+                Spacer()
+            }
             
-            Text("Yes! I am currently having a great day actually")
-                .padding()
-                .background(Color.teal, in: RoundedRectangle(cornerRadius: 8))
-                .shadow(radius: 2)
+            HStack {
+                Spacer()
+                Text("Yes! I am currently having a great day actually")
+                    .padding()
+                    .background(Color.teal, in: RoundedRectangle(cornerRadius: 8))
+                    .shadow(radius: 2)
                 .foregroundStyle(.white)
+            }
 
 
-            Text("Glad to hear it :). Me too")
-                .padding()
-                .background(Color.gray, in: RoundedRectangle(cornerRadius: 8))
-                .shadow(radius: 2)
+            HStack {
+                Text("Glad to hear it :). Me too")
+                    .padding()
+                    .background(Color.gray, in: RoundedRectangle(cornerRadius: 8))
+                    .shadow(radius: 2)
                 .foregroundStyle(.white)
+                Spacer()
+            }
         }
         .padding()
     }
