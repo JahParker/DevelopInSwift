@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C3E31BA2B607164002F4F36 /* SubscriptionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3E31B92B607164002F4F36 /* SubscriptionPage.swift */; };
 		8C8D21732B575C8000FB6C35 /* OnboardingFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D21722B575C8000FB6C35 /* OnboardingFlowApp.swift */; };
 		8C8D21752B575C8000FB6C35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D21742B575C8000FB6C35 /* ContentView.swift */; };
 		8C8D21772B575C8100FB6C35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C8D21762B575C8100FB6C35 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C3E31B92B607164002F4F36 /* SubscriptionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionPage.swift; sourceTree = "<group>"; };
 		8C8D216F2B575C8000FB6C35 /* OnboardingFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnboardingFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C8D21722B575C8000FB6C35 /* OnboardingFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlowApp.swift; sourceTree = "<group>"; };
 		8C8D21742B575C8000FB6C35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			children = (
 				8C8D21722B575C8000FB6C35 /* OnboardingFlowApp.swift */,
 				8C8D21742B575C8000FB6C35 /* ContentView.swift */,
+				8C3E31B92B607164002F4F36 /* SubscriptionPage.swift */,
 				8C8D21802B575D7400FB6C35 /* WelcomePage.swift */,
 				8C8D21822B5776D600FB6C35 /* FeaturesPage.swift */,
 				8C8D21842B577FA300FB6C35 /* FeatureCard.swift */,
@@ -149,6 +152,7 @@
 				8C8D21812B575D7400FB6C35 /* WelcomePage.swift in Sources */,
 				8C8D21832B5776D600FB6C35 /* FeaturesPage.swift in Sources */,
 				8C8D21752B575C8000FB6C35 /* ContentView.swift in Sources */,
+				8C3E31BA2B607164002F4F36 /* SubscriptionPage.swift in Sources */,
 				8C8D21732B575C8000FB6C35 /* OnboardingFlowApp.swift in Sources */,
 				8C8D21852B577FA300FB6C35 /* FeatureCard.swift in Sources */,
 			);
